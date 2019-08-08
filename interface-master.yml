@@ -7,7 +7,7 @@ server:
 spring:
   application:
     name: inter-hsp-interface
- datasource:
+  datasource:
     url: jdbc:mysql://10.10.10.100:3307/internethsp?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 
