@@ -1,8 +1,8 @@
 server:
   #端口号
   port: 9035
-  servlet:
-   context-path: /file
+  #servlet:
+ #  context-path: /file
 
 spring:
   application:
