@@ -99,6 +99,8 @@ eureka:
     serviceUrl:
       defaultZone: http://admin:admin@127.0.0.1:9092/eureka/eureka
     enabled: true
+    register-with-eureka: true
+    fetch-registry: true
 #      http://localhost:9092/eureka/
 
 
