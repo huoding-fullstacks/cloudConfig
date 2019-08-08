@@ -94,6 +94,7 @@ params:
 eureka:
   instance:
     prefer-ip-address: true
+    ip-address: localhost
   client:
     serviceUrl:
       defaultZone: http://admin:admin@127.0.0.1:9092/eureka/eureka
