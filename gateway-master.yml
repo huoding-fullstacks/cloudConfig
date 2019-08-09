@@ -131,6 +131,14 @@ spring:
         
         - Path=/webPatient/**
         filters:
+        - StripPrefix=0   
+      - id: SERVICESIDE
+                    # lb代表从注册中心获取服务，且已负载均衡方式转发
+        uri: lb://INTER-HSP-SIDECAR
+        predicates:
+        
+        - Path=/V1/api/**
+        filters:
         - StripPrefix=0         
   # =====================================
 
