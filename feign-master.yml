@@ -19,7 +19,7 @@ eureka:
 ## 这个要有，如果不加，只加了上面也没用
 ribbon:
   eureka:
-    enabled: true
+    enabled: false
 feign:
   hystrix:
     enabled: false
