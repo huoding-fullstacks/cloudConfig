@@ -103,7 +103,7 @@ eureka:
       #开启熔断
 feign:
   hystrix:
-    enabled: fasle
+    enabled: true
 
 
 #  client:
