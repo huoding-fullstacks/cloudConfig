@@ -88,4 +88,4 @@ ribbon:
     enabled: true
 feign:
   hystrix:
-    enabled: false
+    enabled: true
