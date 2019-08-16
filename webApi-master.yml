@@ -1,8 +1,8 @@
 server:
   #端口号
   port: 9044
-  servlet:
-    context-path: /webApi
+ # servlet:
+  #  context-path: /webApi
 ##数据库连接信息
 spring:
   main:
