@@ -1,8 +1,8 @@
 server:
   #端口号
   port: 9043
-  servlet:
-    context-path: /utils
+ # servlet:
+ #   context-path: /
 
 spring:
   application:
@@ -86,4 +86,4 @@ eureka:
 
 sidecar:
   port: 9992     #常用工具服务异构微服务的端口
-  healthUri: http://10.10.10.250:9992/V1/api/test  #对应第三方程序的health接口
+  healthUri: http://10.10.10.250:9992/tools/v1/api/test  #对应第三方程序的health接口

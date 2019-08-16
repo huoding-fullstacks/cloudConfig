@@ -113,7 +113,7 @@ spring:
         uri: lb://INTER-HSP-UTILS
         predicates:
         
-        - Path=/utils/**
+        - Path=/tools/**
         filters:
         - StripPrefix=0   
       - id: SERVICEDOCTOR
