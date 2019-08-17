@@ -15,8 +15,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://admin:admin@127.0.0.1:9092/eureka/eureka/
-    healthcheck:  # 健康检查
-      enabled: true  
+  #  healthcheck:  # 健康检查
+   #   enabled: true  
    # hostname: 10.10.10.250
     #      http://localhost:9092/eureka/
 #开启熔断
