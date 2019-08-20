@@ -111,3 +111,5 @@ feign:
 sidecar:
   port: 9037     #异构微服务的端口
   healthUri: http://localhost:9037/demo/demo  #对应第三方程序的health接口
+  
+debug: true  
