@@ -104,7 +104,7 @@ eureka:
       #开启熔断
 feign:
   hystrix:
-    enabled: true
+    enabled: false
 
 
 #  client:
