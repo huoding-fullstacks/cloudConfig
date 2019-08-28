@@ -101,9 +101,9 @@ eureka:
     enabled: true
       #      http://localhost:9092/eureka/
     #开启熔断
-#feign:
- # hystrix:
-  #  enabled: true
+feign:
+  hystrix:
+    enabled: true
 
 
 ## 这个要有，如果不加，只加了上面也没用
