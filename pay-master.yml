@@ -1,6 +1,6 @@
 server:
   #端口号
-  port: 9033
+  port: 9047
   servlet:
     context-path: /pay
 ##数据库连接信息
