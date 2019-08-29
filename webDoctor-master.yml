@@ -105,14 +105,14 @@ eureka:
     enabled: true
       #      http://localhost:9092/eureka/
     #开启熔断
-#feign:
- # client:
-  #  config:
-   #   default:
-   #     connectTimeout: 10000
-    #    readTimeout: 10000
-  #hystrix:
-   # enabled: true
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+  hystrix:
+    enabled: true
    
 
 
