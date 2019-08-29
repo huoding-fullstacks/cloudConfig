@@ -86,8 +86,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 10000  #设置httpclient链接超时时间
-        readTimeout: 10000   #设置httpclient响应超时时间
+        connectTimeout: 100000  #设置httpclient链接超时时间
+        readTimeout: 100000   #设置httpclient响应超时时间
   hystrix:
     enabled: true
    
@@ -98,7 +98,7 @@ ribbon:
   eureka:
     enabled: true
     ReadTimeout: 10000    #设置httpclient响应超时时间
-    ConnectTimeout: 25000    #设置httpclient链接超时时间
+    ConnectTimeout: 30000    #设置httpclient链接超时时间
     MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
     MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
     OkToRetryOnAllOperations: true  #是否所有操作都重试
@@ -107,13 +107,13 @@ hystrix:
   command:
     default:
       circuitBreaker:
-        sleepWindowInMilliseconds: 5000    #短路多久以后开始尝试是否恢复，默认5s
+        sleepWindowInMilliseconds: 50000    #短路多久以后开始尝试是否恢复，默认5s
       execution:
-        timeout:
-          enabled: true
+        #timeout:
+         # enabled: true
         isolation:
           thread:
-            timeoutInMilliseconds: 4500     #超时时间（默认为1000ms）
+            timeoutInMilliseconds: 45000     #超时时间（默认为1000ms）
           strategy: SEMAPHORE             #设置在调用线程上执行，并发请求受限于信号量计数
     #   "MyFeignClient#sayWhyByFeign()": #指定feign
     #    execution:
