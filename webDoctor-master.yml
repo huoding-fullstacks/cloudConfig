@@ -109,8 +109,8 @@ feign:
   client:
     config:
       default:
-        connectTimeout: 100000
-        readTimeout: 100000
+        connectTimeout: 100000  #设置httpclient链接超时时间
+        readTimeout: 100000   #设置httpclient响应超时时间
   hystrix:
     enabled: true
    
@@ -118,12 +118,13 @@ feign:
 
 ## 这个要有，如果不加，只加了上面也没用
 ribbon:
-  enabled: true
-  ReadTimeout: 10000    #设置httpclient响应超时时间
-  ConnectTimeout: 25000    #设置httpclient链接超时时间
-  MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
-  MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
-  OkToRetryOnAllOperations: true  #是否所有操作都重试
+  eureka:
+    enabled: true
+    ReadTimeout: 100000    #设置httpclient响应超时时间
+    ConnectTimeout: 250000    #设置httpclient链接超时时间
+    MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
+    MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+    OkToRetryOnAllOperations: true  #是否所有操作都重试
 
 hystrix:
   command:
