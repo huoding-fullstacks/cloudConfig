@@ -1,5 +1,6 @@
 server:
-  port: 7970
+  #port: 7970
+  port: 9970
 spring:
   application:
     name: inter-hsp-txmanager
