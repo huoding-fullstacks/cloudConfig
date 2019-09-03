@@ -101,4 +101,6 @@ eureka:
     enabled: true
 #      http://localhost:9092/eureka/
 
-
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
