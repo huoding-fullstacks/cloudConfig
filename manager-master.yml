@@ -99,4 +99,22 @@ eureka:
       defaultZone: http://admin:admin@127.0.0.1:9092/eureka/eureka
 #      http://localhost:9092/eureka/
 
-
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+  ribbon:
+    loadbalancer:
+      dtx:
+        enabled: true
+#tx-lcn:
+ # logger:
+  #  enabled: true
+   # driver-class-name: ${spring.datasource.driver-class-name}
+    #jdbc-url: ${spring.datasource.url}
+    #username: ${spring.datasource.username}
+    #password: ${spring.datasource.password}
+logging:
+  level:
+    com:
+      codingapi:
+        txlcn: DEBUG
