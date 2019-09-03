@@ -2,7 +2,7 @@ server:
   port: 7970
 spring:
   application:
-    name: inter-hsp-txManager
+    name: inter-hsp-txmanager
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://10.10.10.100:3307/internethsp?useUnicode=true&characterEncoding=UTF-8
