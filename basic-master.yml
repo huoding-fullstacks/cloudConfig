@@ -108,11 +108,6 @@ tx-lcn:
     loadbalancer:
       dtx:
         enabled: true
-  #logger:
-   # driver-class-name: com.mysql.jdbc.Driver
-    #jdbc-url: jdbc:mysql://10.10.10.100:3307/internethsp?useUnicode=true&characterEncoding=UTF-8
-    #username: root
-    #password: 
 logging:
   level:
     com:
