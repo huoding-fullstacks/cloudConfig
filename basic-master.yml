@@ -110,7 +110,7 @@ tx-lcn:
         enabled: true
   logger:
     driver-class-name: com.mysql.jdbc.Driver
-    jdbc-url: jdbc:mysql://10.10.10.100:3307/tx-manager?characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    jdbc-url: jdbc:mysql://10.10.10.100:3307/internethsp?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 
 logging:
