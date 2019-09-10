@@ -1,6 +1,6 @@
 server:
   #端口号
-  port: 8165
+  port: 8105
 
 ##数据库连接信息
 spring:
