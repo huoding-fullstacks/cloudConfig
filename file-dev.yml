@@ -1,0 +1,29 @@
+server:
+  #端口号
+  port: 9035
+  #servlet:
+ #  context-path: /file
+
+spring:
+  application:
+    name: inter-hsp-file
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://admin:admin@127.0.0.1:9092/eureka/eureka/
+  #  healthcheck:  # 健康检查
+   #   enabled: true  
+   # hostname: 10.10.10.250
+    #      http://localhost:9092/eureka/
+#开启熔断
+#feign:
+#  hystrix:
+#    enabled: true
+
+sidecar:
+  hostname: 10.10.10.250
+  ip-address: 10.10.10.250
+  port: 9991     #文件服务异构微服务的端口
+  healthUri: http://${sidecar.ip-address}:${sidecar.port}/file/v1/api/test  #对应第三方程序的health接口
