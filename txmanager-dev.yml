@@ -6,9 +6,9 @@ spring:
     name: inter-hsp-txmanager
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.10.10.243:3306/internethsp?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://10.10.10.14:3306/internethsp?characterEncoding=UTF-8&useUnicode=true&useSSL=true&serverTimezone=UTC
     username: root
-    password:1qaz2wsx
+    password:
   jpa:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     hibernate:
