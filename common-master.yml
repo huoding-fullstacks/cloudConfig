@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: inter-hsp-common
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 5MB
+      max-request-size: 100MB
   datasource:
     url: jdbc:mysql://10.10.10.100:3307/internethsp?useUnicode=true&characterEncoding=UTF-8
     username: root
