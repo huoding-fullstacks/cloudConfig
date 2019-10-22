@@ -161,3 +161,12 @@ logging:
     com:
       codingapi:
         txlcn: DEBUG
+    org:
+      springframework:
+        security:
+          oauth2: debug    
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: client-secret
