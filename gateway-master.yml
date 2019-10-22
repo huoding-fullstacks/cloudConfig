@@ -147,7 +147,15 @@ spring:
         
         - Path=/pay/**
         filters:
-        - StripPrefix=0    
+        - StripPrefix=0   
+      - id: SERVICEOAUTH
+                    # lb代表从注册中心获取服务，且已负载均衡方式转发
+        uri: lb://INTER-HSP-AUTH
+        predicates:
+        
+        - Path=/Oauth/**
+        filters:
+        - StripPrefix=0         
   # =====================================
 
   #====================================
@@ -174,15 +182,8 @@ logging:
   level:
     org:
       springframework:
-        security:
-          oauth2: debug 
         cloud:
-          gateway: debug  
-    
-    
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-value: client-secret
+          gateway: debug 
+
+           
   

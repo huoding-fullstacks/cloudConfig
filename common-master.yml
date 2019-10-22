@@ -118,3 +118,15 @@ sidecar:
   healthUri: http://localhost:9037/demo/demo  #对应第三方程序的health接口
   
 debug: true  
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: client-secret
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          oauth2: debug
+
