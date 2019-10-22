@@ -172,4 +172,17 @@ management:
       show-details: always
 logging:
   level:
-    org.springframework.cloud.gateway: debug
+    org:
+      springframework:
+        security:
+          oauth2: debug 
+        cloud:
+          gateway: debug  
+    
+    
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: client-secret
+  
