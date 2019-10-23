@@ -9,11 +9,6 @@ server:
     max-http-post-size: 0 # put或post方法最大字节数
     selectors: 4 # selector线程数
 ##数据库连接信息
-security:
-  oauth2:
-    resource:
-      jwt:
-        key-value: client-secret
 spring:
   main:
     allow-bean-definition-overriding: true
@@ -178,6 +173,10 @@ logging:
     org:
       springframework:
         security:
-          oauth2: debug    
-
-
+          oauth2: debug  
+ #security权限认证配置          
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: client-secret

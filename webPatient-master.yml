@@ -154,3 +154,13 @@ logging:
     com:
       codingapi:
         txlcn: DEBUG
+    org:
+      springframework:
+        security:
+          oauth2: debug  
+ #security权限认证配置          
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: client-secret

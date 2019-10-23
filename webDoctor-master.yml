@@ -164,7 +164,8 @@ logging:
     org:
       springframework:
         security:
-          oauth2: debug    
+          oauth2: debug  
+ #security权限认证配置          
 security:
   oauth2:
     resource:
