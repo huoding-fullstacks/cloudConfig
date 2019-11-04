@@ -7,6 +7,10 @@ server:
 spring:
   application:
     name: inter-hsp-file
+  http:
+    multipart:
+      maxFileSize: 1024Mb
+      maxRequestSize: 1024Mb
 eureka:
   instance:
     prefer-ip-address: true
